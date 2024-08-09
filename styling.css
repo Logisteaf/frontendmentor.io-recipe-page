@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  background-color: hsl(30, 54%, 90%);
+}
+
+.recipe-page {
+  width: 700px;
+  max-width: 100%;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.recipe-page > img {
+  width: 100%;
+}
+
+.recipe-page-content > h1 {
+  color: hsl(24, 5%, 18%);
+  font-family: "Young Serif", serif;
+}
+
+.recipe-page-content > p,
+.nutrition > p {
+  margin-top: 20px;
+  color: hsl(30, 10%, 34%);
+}
+
+.preparationTime {
+  margin-top: 30px;
+  background-color: hsl(330, 100%, 98%);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.preparationTime > h2 {
+  color: hsl(332, 51%, 32%);
+  font-weight: 600;
+}
+
+.preparationTime > ul {
+  margin-top: 12px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.preparationTime > ul > li,
+.ingredients > ul > li,
+.instructions > ol > li,
+.nutrition > div > div h4 {
+  color: hsl(30, 10%, 34%);
+}
+
+.preparationTime > ul > li > span,
+.instructions > ol > li > span,
+.nutrition .second > h4 {
+  font-weight: 600;
+}
+
+.ingredients {
+  margin-top: 25px;
+}
+
+.ingredients > h2,
+.instructions > h2,
+.nutrition > h2 {
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif", serif;
+}
+
+.ingredients > ul,
+.instructions > ol {
+  margin-top: 12px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.seperator {
+  width: 100%;
+  height: 1px;
+  background-color: hsl(30, 54%, 90%);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.nutrition > div {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+}
+
+.nutrition > div > div {
+  width: 50%;
+}
+
+.nutrition > div > div > h4 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.small-seperator {
+  width: 100%;
+  height: 1px;
+  background-color: hsl(30, 54%, 90%);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 700px) {
+  .recipe-page {
+    border-radius: 25px;
+    padding: 30px;
+    margin-top: 8dvh;
+    margin-bottom: 8dvh;
+  }
+
+  .recipe-page > img {
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .recipe-page {
+    gap: 5px;
+  }
+
+  .recipe-page-content {
+    padding: 30px;
+  }
+}
